@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="log_peq.png" type="image/x-icon">
+    <link rel="icon" href="Img_landing/log_peq.png" type="image/x-icon">
     <title>Código Humano</title>
 </head>
 <body>
     <!-- Sección con el logo y el menú -->
     <section>
-            <img src="logo.png" alt="logo_cod_humano" class="logo">
+            <img id="inicio" src="Img_landing/logo.png" alt="logo_cod_humano" class="logo">
             <nav>
                 <ul class="link">
                     <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#acerca-de">Quiénes somos</a></li>
                     <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="/formulario_contacto.html">Contacto</a></li>
                 </ul>
             </nav>
     </section>
@@ -41,61 +41,69 @@
             </p>
         </div>
         <div class="imagen_container">
-            <img src="Ellipse 1personas.jpg" alt="Imagen 1" class="personas">
-            <img src="Ellipse 2equipo.jpg" alt="Imagen 2" class="equipo">
+            <img src="Img_landing/Ellipse 1personas.jpg" alt="Imagen 1" class="personas">
+            <img src="Img_landing/Ellipse 2equipo.jpg" alt="Imagen 2" class="equipo">
         </div>
     </div>
 
     <!-- Texto como título -->
     <div class="servicios">
-        <p class="title_servicios">¿Qué servicios ofrecemos?</p>
+        <p id="servicios" class="title_servicios">¿Qué servicios ofrecemos?</p>
     </div>
 
 
     <!-- Tres cuadros horizontales -->
     <div class="contenedor-cuadros">
         <div class="cuadro">
-            <img src="2ic 1cabeza.jpg" alt="Imagen 3">
-            <p>Facilitación de Reflexión y Conciencia</p>
-            <p>­­­­Ayudamos a individuos, comunidades y empresas a reflexionar y tomar conciencia de su bienestar emocional y felicidad.</p>
+            <img class="img_cuadros" src="Img_landing/2ic 1cabeza.jpg" alt="Imagen 3">
+            <p class="text_cuadro_titulo">Facilitación de Reflexión y Conciencia</p>
+            <p class="text_cuadro_texto">­­­­Ayudamos a individuos, comunidades y empresas a reflexionar y tomar conciencia de su bienestar emocional y felicidad.</p>
         </div>
         <div class="cuadro">
-            <img src="3ic 1regla.jpg" alt="Imagen 4">
-            <p>Transformación Personal a través de Herramientas y Talleres</p>
-            <p>­­­­Proporcionamos recursos para la transformación personal en diferentes situaciones.</p>
+            <img class="img_cuadros" src="Img_landing/3ic 1regla.jpg" alt="Imagen 4">
+            <p class="text_cuadro_titulo">Transformación Personal a través de Herramientas y Talleres</p>
+            <p class="text_cuadro_texto_medio">­­­­Proporcionamos recursos para la transformación personal en diferentes situaciones.</p>
         </div>
         <div class="cuadro">
-            <img src="4ICO 1bidirect.jpg" alt="Imagen 5">
-            <p>Promoción de la Comunicación y Cambio Positivo</p>
-            <p>­­­­Promovemos diálogos y ofrecemos recursos que mejoran la comprensión del bienestar emocional.</p>
+            <img class="img_cuadros" src="Img_landing/4ICO 1bidirect.jpg" alt="Imagen 5">
+            <p class="text_cuadro_titulo">Promoción de la Comunicación y Cambio Positivo</p>
+            <p class="text_cuadro_texto">­­­­Promovemos diálogos y ofrecemos recursos que mejoran la comprensión del bienestar emocional.</p>
         </div>
     </div>
-
+    <br><br><br><br>
     <!-- Título en amarillo -->
     <h2 class="amarillo">¿Estás en busca de soluciones efectivas para tus necesidades?</h2>
 
     <!-- Botón -->
-    <button>Comunícate con nosotros</button>
-
+    <br><br><br>
+    <div class="container_boton">
+        <a href="/formulario_contacto.html" class="boton">Comunícate con nosotros</a>
+    </div>
+    <br><br><br><br><br>
     <!-- Tres imágenes circulares con texto -->
-    <div>
-        <img src="Ellipse 5profile.jpg" alt="Imagen 6">
-        <p>­­­­­­­­Ayudamos a individuos, comunidades y empresas a reflexionar y tomar conciencia de su bienestar emocional y felicidad.</p>
+    <div id="acerca-de" class="container_empleados">
+        <div>
+            <img src="Img_landing/Ellipse 5profile.jpg" alt="Imagen 6">
+            <p>­­­­­­­­Ayudamos a individuos, comunidades y empresas a reflexionar y tomar conciencia de su bienestar emocional y felicidad.</p>
+        </div>
+        <div>
+            <img src="Img_landing/Ellipse 5profile.jpg" alt="Imagen 7">
+            <p>­­­­Ayudamos a individuos, comunidades y empresas a reflexionar y tomar conciencia de su bienestar emocional y felicidad.­­­­</p>
+        </div>
+        <div>
+            <img src="Img_landing/Ellipse 5profile.jpg" alt="Imagen 8">
+            <p>Ayudamos a individuos, comunidades y empresas a reflexionar y tomar conciencia de su bienestar emocional y felicidad.</p>
+        </div>
     </div>
-    <div>
-        <img src="Ellipse 5profile.jpg" alt="Imagen 7">
-        <p>­­­­Ayudamos a individuos, comunidades y empresas a reflexionar y tomar conciencia de su bienestar emocional y felicidad.­­­­</p>
-    </div>
-    <div>
-        <img src="Ellipse 5profile.jpg" alt="Imagen 8">
-        <p>Ayudamos a individuos, comunidades y empresas a reflexionar y tomar conciencia de su bienestar emocional y felicidad.</p>
-    </div>
-
+    <br><br><br><br>
     <!-- Footer -->
     <footer class="footer">
-        <img src="6 1mail.png" alt="Icono de correo">
-        <img src="4 1linkedin.png" alt="Icono de LinkedIn">
-        <img src="5 1telefono.png" alt="Icono de teléfono">
+        <img src="Img_landing/email.png" alt="Icono de correo">
+        <img src="Img_landing/linkedin.png" alt="Icono de LinkedIn">
+        <img src="Img_landing/phone.png" alt="Icono de teléfono">
     </footer>
+    <br><br><br>
+    <a class="gotop" href="#inicio"><img class="flecha" src="Img_landing/flecha.png" alt="Up"></a>
+    <img src="Img_landing/imagen_fondo.png" alt="Background Image" class="background_image">
 </body>
 </html>
