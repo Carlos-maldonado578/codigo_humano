@@ -20,23 +20,30 @@
         </nav>
     </div>
     <br><br><br><br><br><br><br><br><br><br><br>
-    <h1 class="amarillo">Contáctanos:</h1>
+    <h1 class="amarillo_form">Contáctanos:</h1>
     <p class="texto_form">¿Tienes alguna pregunta o comentario? No dudes en contactarnos. <br> Responderemos a tu mensaje a la brevedad.</p>
-    <form class="formulario">
-        <div class="campo">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-        </div><br>
-        <div class="campo">
-            <label for="correo">Correo electrónico:</label>
-            <input type="email" id="correo" name="correo" required>
-        </div><br>
-        <div class="campo">
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-        </div><br>
-        <button class="boton_form" type="submit">Enviar</button>
-    </form>
+    <br><br>
+    <div class="container_form">
+        <form method="post" action="" class="formulario" name="formulario_contacto">
+            <div class="campo"><br>
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+            </div><br>
+            <div class="campo">
+                <label for="numero">Número:</label><br>
+                <input type="number" id="numero" name="número" placeholder="Número" required>
+            </div><br>
+            <div class="campo">
+                <label for="correo">Correo electrónico:</label><br>
+                <input type="email" id="correo" name="correo" placeholder="Correo electrónico" required>
+            </div><br>
+            <div class="campo">
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Mensaje" required></textarea>
+            </div><br>
+            <button class="boton_form" type="submit" id="submit">Enviar</button><br><br>
+        </form>
+    </div>
     <br><br><br><br><br>
     <!-- Footer -->
     <footer class="footer">

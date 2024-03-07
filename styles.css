@@ -16,12 +16,14 @@ html{
 body {
     font-family: Arial, sans-serif;
     background-color: #023539;
+    margin: 0;
+    padding: 0;
 }
 
 .body_form{
     font-family: Arial, sans-serif;
     background-color: #023539;
-    width: 1245px;
+    width: 0 auto;
     height: 1048px;
 }
 
@@ -52,6 +54,7 @@ body {
     height:168px;
     width:363px;
     left: 70px;
+    padding-top: 20px;
 }
 
 nav{
@@ -149,6 +152,11 @@ li{
     left: 58px;
     top: 74px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.personas, .equipo {
+    width: 100%;
+    max-width: 340px; /* Establece un ancho máximo para las imágenes */
 }
 
 .title_servicios{
@@ -257,12 +265,28 @@ li{
     color: white;
 }
 
+.container_form{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #023539;
+    border-radius: 3%;
+}
+
 .formulario{
     font-size: 18px;
-    display: table-caption;
-    padding-left: 526px;
+    margin: 0 auto;
     font-family: 'Poppins', sans-serif;
     color: white;
+}
+
+.formulario input, textarea{
+    border-radius: 3%;
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    outline: none;
+    border: 0;
 }
 
 .texto_form{
@@ -272,7 +296,7 @@ li{
 }
 
 .boton_form{
-    color: #000;
+    color: rgb(128, 127, 127);
     border-radius: 39px;
     font-size: 22px;
     padding: 4px 29px;
@@ -282,6 +306,17 @@ li{
 
 .boton_form:hover {
     color: #000;
+}
+
+.amarillo_form {
+    color: #DAF067;
+    text-align: center;
+    font-family: 'Molengo', sans-serif;
+    font-size: 50px;
+    width: 970px;
+    height: 100px;
+    text-transform: uppercase;
+    margin: auto;
 }
 
 .gotop{
@@ -312,3 +347,17 @@ li{
 }
 
 
+@media screen and (max-width: 768px) {
+    .container_form {
+        padding: 10px;
+    }
+
+    .formulario input,
+    .formulario textarea {
+        font-size: 14px;
+    }
+
+    .formulario button {
+        font-size: 14px;
+    }
+}
