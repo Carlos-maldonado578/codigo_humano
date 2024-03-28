@@ -12,7 +12,9 @@
 <body class="body_form">
     <!-- Sección con el logo y el menú -->
     <div class="container_logo">
-        <a><img id="inicio" src="Img_landing/logo.png" alt="logo_cod_humano" class="logo"></a>
+        <a href="/" id="inicio">
+            <img src="Img_landing/logo.png" alt="logo_cod_humano" class="logo">
+        </a>
         <nav>
             <ul class="link">
                 <li><a href="/index.html">Inicio</a></li>
@@ -21,27 +23,28 @@
     </div>
     <br><br><br><br><br><br><br><br><br><br><br>
     <h1 class="amarillo_form">Contáctanos:</h1>
-    <p class="texto_form">¿Tienes alguna pregunta o comentario? No dudes en contactarnos. <br> Responderemos a tu mensaje a la brevedad.</p>
+    <p class="texto_form">¿Tienes alguna pregunta o comentario? No dudes en contactarnos. <br> Responderemos a tu
+        mensaje a la brevedad.</p>
     <br><br>
     <div class="container_form">
-        <form method="post" action="" class="formulario" name="formulario_contacto">
+        <form class="formulario" action="https://formspree.io/f/mbjnzobw" method="POST">
             <div class="campo"><br>
-                <label for="nombre">Nombre:</label><br>
+                <!-- <label for="nombre">Nombre:</label><br> -->
                 <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
             </div><br>
             <div class="campo">
-                <label for="numero">Número:</label><br>
+                <!-- <label for="numero">Número:</label><br> -->
                 <input type="number" id="numero" name="número" placeholder="Número" required>
             </div><br>
             <div class="campo">
-                <label for="correo">Correo electrónico:</label><br>
+                <!-- <label for="correo">Correo electrónico:</label><br> -->
                 <input type="email" id="correo" name="correo" placeholder="Correo electrónico" required>
             </div><br>
             <div class="campo">
-                <label for="mensaje">Mensaje:</label><br>
+                <!-- <label for="mensaje">Mensaje:</label><br> -->
                 <textarea id="mensaje" name="mensaje" rows="5" placeholder="Mensaje" required></textarea>
             </div><br>
-            <button class="boton_form" type="submit" id="submit">Enviar</button><br><br>
+            <button class="boton_form" type="submit" value="Submit" id="submit">Enviar</button><br><br>
         </form>
     </div>
     <br><br><br><br><br>
@@ -54,6 +57,13 @@
     <br><br><br>
     <a class="gotop" href="#inicio"><img class="flecha" src="Img_landing/flecha.png" alt="Up"></a>
     <img src="Img_landing/imagen_fondo_form.png" alt="Background Image" class="background_image_form">
+    <script>
+        window.onbeforeunload = () => {
+            for (const form of document.getElementsByTagName('form')) {
+                form.reset();
+            }
+        }
+    </script>
 </body>
 
 </html>

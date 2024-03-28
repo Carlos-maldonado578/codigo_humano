@@ -8,9 +8,11 @@
 
 html{
     text-align: center;
-    width: 1300px;
-    height: 100vh;
-    padding-left: 150px;
+    width: 100%; /* Cambiado a 100% para adaptarse al ancho del dispositivo */
+    max-width: 1300px; /* Establece un ancho máximo para evitar que la página se expanda demasiado */
+    margin: 0 auto; /* Centra la página horizontalmente */
+    padding: 0;
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
 }
 
 body {
@@ -23,9 +25,14 @@ body {
 .body_form{
     font-family: Arial, sans-serif;
     background-color: #023539;
-    width: 0 auto;
-    height: 1048px;
+    width: 100%; /* Cambiado a 100% para adaptarse al ancho del dispositivo */
+    max-width: 1300px; /* Establece un ancho máximo para evitar que se expanda demasiado */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    padding: 0;
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    height: auto; /* Cambiado a auto para que la altura se ajuste automáticamente al contenido */
 }
+
 
 .background_image {
     position: absolute;
@@ -40,7 +47,7 @@ body {
 
 .background_image_form {
     position: absolute;
-    top: 325px;
+    top: 304px;
     left: 0;
     bottom: 0;
     width: 100%;
