@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../docs/Img_landing/log_peq.png" type="image/x-icon">
+    <link rel="stylesheet" href="../docs/styles.css">
+    <title>Formulario de contacto</title>
+</head>
+
+<body class="body_form">
+    <!-- Sección con el logo y el menú -->
+    <div class="container_logo">
+        <a href="/docs/index.html" id="inicio">
+            <img src="../docs/Img_landing/logo.png" alt="logo_cod_humano" class="logo">
+        </a>
+        <nav>
+            <ul class="link">
+                <li><a href="../docs/index.html">Inicio</a></li>
+            </ul>
+        </nav>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <h1 class="amarillo_form">Contáctanos:</h1>
+    <p class="texto_form">¿Tienes alguna pregunta o comentario? No dudes en contactarnos. <br> Responderemos a tu
+        mensaje a la brevedad.</p>
+    <br><br>
+    <div class="container_form">
+        <form class="formulario" action="https://formspree.io/f/mbjnzobw" method="POST">
+            <div class="campo"><br>
+                <!-- <label for="nombre">Nombre:</label><br> -->
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+            </div><br>
+            <div class="campo">
+                <!-- <label for="numero">Número:</label><br> -->
+                <input type="number" id="numero" name="número" placeholder="Número" required>
+            </div><br>
+            <div class="campo">
+                <!-- <label for="correo">Correo electrónico:</label><br> -->
+                <input type="email" id="correo" name="correo" placeholder="Correo electrónico" required>
+            </div><br>
+            <div class="campo">
+                <!-- <label for="mensaje">Mensaje:</label><br> -->
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Mensaje" required></textarea>
+            </div><br>
+            <button class="boton_form" type="submit" value="Submit" id="submit">Enviar</button><br><br>
+        </form>
+    </div>
+    <br><br><br><br><br>
+    <!-- Footer -->
+    <footer class="footer">
+        <img src="../docs/Img_landing/email.png" alt="Icono de correo">
+        <img src="../docs/Img_landing/linkedin.png" alt="Icono de LinkedIn">
+        <img src="../docs/Img_landing/phone.png" alt="Icono de teléfono">
+    </footer>
+    <br><br><br>
+    <a class="gotop" href="#inicio"><img class="flecha" src="../docs/Img_landing/flecha.png" alt="Up"></a>
+    <img src="../docs/Img_landing/imagen_fondo_form.png" alt="Background Image" class="background_image_form">
+    <script>
+        window.onbeforeunload = () => {
+            for (const form of document.getElementsByTagName('form')) {
+                form.reset();
+            }
+        }
+    </script>
+</body>
+
+</html>
